@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+
+    <div class="screen">
+      <div class="start-container">
+        <button class="start-button" onclick="start()">START</button>
+      </div>
+  
+      <div class="container">
+
+        <div class="instruction">
+          <h3>Game Instruction</h3>
+          <p>Choose the color that apeared last from the options provided</p>
+        </div>
+
+        <div class="game-space">
+          <div class="answer" data-testid="colorBox">
+            <p class="status" data-testid="gameStatus"></p>
+          </div>
+          <div class="options" data-testid="colorOption">
+            <ul>
+              <li><div class="option"></div></li>
+              <li><div class="option"></div></li>
+              <li><div class="option"></div></li>
+              <li><div class="option"></div></li>
+              <li><div class="option"></div></li>
+              <li><div class="option"></div></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="score-box" data-testid="score">Score <span class="score">0</span></p>
+
+        <div class="bts">
+          <button class="reset" onclick="gameReset()" data-testid="newGameButton">RESET</button>
+          <button class="quit" onclick="gameQuit()">QUIT</button>
+        </div>
+        
+      </div>
+    </div>
+    
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #131515;
+  color: #fffafb;
+  font-family: "Roboto", serif;
+  padding-top: 5rem;
+}
+
+.screen {
+  width: 20rem;
+  height: 30rem;
+  border: 1px solid #fffafb;
+  margin: 0 auto;
+  padding-top: 13rem;
+  position: relative;
+}
+
+.start-container {
+  margin: 0 auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+.start-container .start-button {
+  width: 8rem;
+  height: 3rem;
+  font-family: "Roboto";
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  background-color: #339989;
+  color: #fffafb;
+  outline: none;
+  border: none;
+  border-radius: 4rem;
+  display: block;
+}
+
+.container {
+  position: absolute;
+  top: 2rem;
+  margin-left: 0.8rem;
+  width: 18rem;
+  display: none;
+}
+
+.container .instruction {
+  text-align: center;
+}
+
+.container .game-space {
+  height: 12rem;
+  margin-top: 2rem;
+}
+
+.container .game-space .status {
+  animation: "fadeout" 2s infinite;
+}
+
+.container .game-space .answer {
+  width: 5.2rem;
+  height: 5.2rem;
+  margin: 0 auto;
+  outline: none;
+  background-color: #131515;
+  border: 2px solid #339989;
+  border-radius: 1rem;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.container .game-space .options {
+  display: none;
+}
+
+.container .game-space .options ul li {
+  list-style-type: none;
+}
+
+.container .game-space .options ul {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .game-space .options .option {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.container .score-box {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container .bts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .bts button {
+  width: 5rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 4rem;
+  background-color: #339989;
+  color: #fffafb;
+}
+
+@media only screen and (min-width: 600px) {
+  .screen {
+    width: 30rem;
+    height: 33rem;
+  }
+
+  .container {
+    width: 90%;
+    left: 0.7rem;
+  }
+
+  .container .game-space .options .option {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .container .bts button {
+    width: 6rem;
+    height: 3rem;
+  }
+}
